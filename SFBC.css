@@ -38,6 +38,10 @@ li {
     position: absolute;
     
 }
+#fbIcon {
+    height:10%;
+    width: 10%;
+}
 
 #sancPic {
     width: 20%;
@@ -81,6 +85,11 @@ li a {
 }
 #last {
 border-right: none;
+}
+
+#fbIcon{
+    height: 20px;
+    width: 20px;
 }
 
 /* Change the link color to #111 (black) on hover */
