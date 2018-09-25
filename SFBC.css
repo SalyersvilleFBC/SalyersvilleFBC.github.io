@@ -140,6 +140,8 @@ clear: both;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+    border-radius: 10px;
+
 }
 
 .container:hover .image {
@@ -151,7 +153,7 @@ clear: both;
 }
 
 .text {
-  background-color: #55A0CC;
+    background: linear-gradient(to right, #55A0CC 33.33%, #1F487E, #1D3461);
   color: white;
   font-size: 16px;
   padding: 16px 32px;
@@ -173,4 +175,7 @@ clear: both;
     font-size: 5pt;
     float: right;
     margin-right: 10px;
+}
+iframe {
+    height: 90%;
 }
