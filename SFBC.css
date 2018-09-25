@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #EEEEEE;
+    background: linear-gradient(to right, #55A0CC 33.33%, #1F487E, #1D3461);
     margin: 0;
 }
 
@@ -49,11 +49,12 @@ li {
 #lastSancPic {
     width: 20%;
     height: 600px;
+    border-radius: 5px;
     
 }
 
 #blueLine {
-    background-color: #55A0CC;
+    background: linear-gradient(to right, #55A0CC 33.33%, #1F487E, #1D3461);
     width: 100%;
     height: 1%;
 }
@@ -102,7 +103,9 @@ li a:hover {
     display: table;
     clear: both;
 }
-
+.clear {
+clear: both;
+}
 .active {
     background-color: white;
     color: black
@@ -111,4 +114,63 @@ li a:hover {
   .column {
     width: 50%;
   }
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    background: linear-gradient(to right, #55A0CC 33.33%, #1F487E, #1D3461);
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #55A0CC;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.footer {
+    bottom: 0;
+    background-color: #BBBBBB;
+}
+
+#greyLine {
+
+    background-color: black;
+    width: 100%;
+    height: 1%;
+
+}
+#footerText {
+    font-size: 5pt;
+    float: right;
+    margin-right: 10px;
 }
